@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class PlayerMovement : EntityMovement
+public class PlayerMovement : MovementBase
 {
     protected override Vector3 GetHorizontal()
     {

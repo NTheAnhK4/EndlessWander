@@ -2,26 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class EntityMovement : ChildBehavior
+public class MovementBase : ActionBase
 {
     [SerializeField] protected Transform entity;
     [SerializeField] protected float speed;
     [SerializeField] protected Vector3 direction;
-    
 
-    protected abstract Vector3 GetHorizontal();
+    protected virtual Vector3 GetHorizontal()
+    {
+        return Vector3.right;
+    }
 
-    protected abstract Vector3 GetVertical();
+    protected virtual Vector3 GetVertical()
+    {
+        return Vector3.up;
+    }
 
     protected virtual Vector3 GetDirection()
     {
         return (GetHorizontal() + GetVertical()) * speed;
     }
 
-    protected virtual void Update()
+    protected override void UpdateLogic()
     {
+        base.UpdateLogic();
         direction = GetDirection();
+    }
+
+    protected override void UpdatePhysis()
+    {
+        base.UpdatePhysis();
         entity.transform.Translate(direction * Time.deltaTime);
     }
 }
-
