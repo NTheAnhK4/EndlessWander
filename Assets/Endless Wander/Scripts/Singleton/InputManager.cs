@@ -16,5 +16,12 @@ public class InputManager : Singeton<InputManager>
     {
         return Input.GetAxis("Vertical") * Vector3.up;
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PoolingManager.Instance.Spawn("Enemies", "Enemy1", Vector3.zero);
+        }
+    }
 }

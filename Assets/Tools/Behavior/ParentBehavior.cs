@@ -33,6 +33,7 @@ public class ParentBehavior : MonoBehaviour
 
     protected virtual void Reset()
     {
+        LoadComponent();
         ResetValue();
     }
 }
