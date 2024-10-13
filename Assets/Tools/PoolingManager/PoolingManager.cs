@@ -101,4 +101,11 @@ public class PoolingManager : Singeton<PoolingManager>
         prefab.gameObject.SetActive(true);
         return prefab;
     }
+
+    public Transform Spawn(string type, string prefabName, Vector3 position, Quaternion rot)
+    {
+        Transform prefab = Spawn(type, prefabName, position);
+        prefab.SetPositionAndRotation(position,rot);
+        return prefab;
+    }
 }

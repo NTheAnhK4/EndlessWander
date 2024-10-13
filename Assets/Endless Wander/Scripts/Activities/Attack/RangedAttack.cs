@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class RangedAttack : AttackBase
 {
-    [SerializeField] protected Transform bulletPrefab;
+    [SerializeField] protected string bulletName;
+    
     protected override void OnAttack()
     {
         base.OnAttack();
         Debug.Log("Attacking");
     }
-
+    
     protected override void ResetValue()
     {
         entity = transform.parent;

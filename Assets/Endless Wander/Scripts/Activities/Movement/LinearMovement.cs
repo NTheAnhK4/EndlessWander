@@ -21,7 +21,8 @@ public class LinearMovement : MovementBase
     protected override void ResetValue()
     {
         base.ResetValue();
-        entity = transform;
+        entity = transform.parent;
+        slope = 0;
         speed = 2;
 
     }

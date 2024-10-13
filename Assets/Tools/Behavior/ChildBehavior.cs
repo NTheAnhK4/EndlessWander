@@ -13,6 +13,7 @@ public class ChildBehavior : MonoBehaviour
         LoadComponentInParent();
         //Load for scripts and tranfer data
         LoadComponentInChild();
+        LoadComponentInIt();
     }
 
     protected virtual void ResetValue()
@@ -25,6 +26,11 @@ public class ChildBehavior : MonoBehaviour
     }
 
     protected virtual void LoadComponentInChild()
+    {
+        
+    }
+
+    protected virtual void LoadComponentInIt()
     {
         
     }

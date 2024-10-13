@@ -20,10 +20,16 @@ public class ParentBehavior : MonoBehaviour
         
     }
 
+    protected virtual void LoadComponentInIt()
+    {
+        
+    }
+
     protected virtual void LoadComponent()
     {
         LoadExternalComponent();
         LoadComponentInChild();
+        LoadComponentInIt();
     }
 
     protected virtual void OnEnable()

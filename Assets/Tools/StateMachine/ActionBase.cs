@@ -14,9 +14,19 @@ public class ActionBase : ChildBehavior
         
     }
 
-    protected virtual void Update()
+    public virtual void UpdateAction()
     {
         UpdateLogic();
         UpdatePhysis();
+    }
+
+    public virtual void EnterAction()
+    {
+        
+    }
+
+    public virtual void ExitAction()
+    {
+        
     }
 }
