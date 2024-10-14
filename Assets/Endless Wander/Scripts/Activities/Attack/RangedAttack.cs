@@ -8,7 +8,7 @@ public class RangedAttack : AttackBase
     protected override void OnAttack()
     {
         base.OnAttack();
-        Debug.Log("Attacking");
+        PoolingManager.Instance.Spawn("Bullets", "Bubble", entity.position);
     }
     
     protected override void ResetValue()
