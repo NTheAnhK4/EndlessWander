@@ -1,0 +1,6 @@
+
+public interface INerve : IEntity
+{
+   
+    
+}
