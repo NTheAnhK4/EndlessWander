@@ -72,6 +72,8 @@ public class MoveCtrl : ChildBehavior
         targetMoveList[id].Move(entity,target,2);
     }
 
+    
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.A)) curMove = MoveType.AutomatedMove;
