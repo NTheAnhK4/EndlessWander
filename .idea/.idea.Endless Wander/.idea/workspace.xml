@@ -6,14 +6,55 @@
   <component name="ChangeListManager">
     <list default="true" id="9afd55c5-ede6-4373-b550-452bacd10748" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess/DataProcess.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess/DataProcess.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/SignalNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/SignalNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/DataDecider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/DataDecider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/FDataDecider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/FDataDecider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataStore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataStore/DataStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataStore/DataStore.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/ComponentID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/ComponentID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/DataProcessID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/DataProcessID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/HealthID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/HealthID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/MoveID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/MoveID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/SensorID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/SensorID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Health.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Health/HealthManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Health/HealthManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/CurvedMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/CurvedMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IAutoMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IAutoMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IRetreatMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IRetreatMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/ITargetMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/ITargetMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/LinearMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/LinearMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Receiver.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Receiver/Receiver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Receiver/Receiver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/Sensor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/Sensor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/ControlMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/ControlMove.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +66,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/RequestNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Selector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/DataDecider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/FDataDecider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/DataProcessID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/HealthID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/InteractionID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/MoveID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/SensorID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Health/HealthManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/Interaction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/CurvedMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IAutoMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IRetreatMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/ITargetMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/LinearMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Receiver/Receiver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Iteam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Task/code/C_sharp/game/Tower Defense 2D/Assets/_Core_2D_Tower_Defense/_Scripts/Tools/Observer/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Task/code/C_sharp/game/Tower Defense 2D/Assets/_Core_2D_Tower_Defense/_Scripts/Tools/Singleton/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
@@ -53,26 +101,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__dataProcess&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feature__interaction",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
@@ -124,7 +172,9 @@
       <workItem from="1729952446176" duration="1301000" />
       <workItem from="1729956984269" duration="1591000" />
       <workItem from="1730122411187" duration="8797000" />
-      <workItem from="1730160321226" duration="4581000" />
+      <workItem from="1730160321226" duration="6294000" />
+      <workItem from="1730194710354" duration="1876000" />
+      <workItem from="1730198467202" duration="10855000" />
     </task>
     <servers />
   </component>
