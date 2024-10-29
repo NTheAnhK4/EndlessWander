@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class ChildBehavior : MonoBehaviour
@@ -38,7 +36,7 @@ public class ChildBehavior : MonoBehaviour
         ResetValue();
     }
 
-    protected void Start()
+    protected virtual void Start()
     {
         LoadComponent();
         ResetValue();

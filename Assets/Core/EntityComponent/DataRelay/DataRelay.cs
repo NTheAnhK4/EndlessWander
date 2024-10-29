@@ -1,29 +1,22 @@
 using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 
 
 public class DataRelay : ParentBehavior
 {
-    [SerializeField] protected DataProcess dataProcess;
-    protected Dictionary<object, Action<object>> signalCentral = new Dictionary<object, Action<object>>();
-    protected override void LoadComponentInChild()
-    {
-        base.LoadComponentInChild();
-        this.LoadDataProcess();
-    }
-
-    protected virtual void LoadDataProcess()
-    {
-        if(dataProcess != null) return;
-        dataProcess = transform.GetComponentInChildren<DataProcess>();
-    }
-
+    
+    protected readonly Dictionary<object, Action<object>> signalCentral = new Dictionary<object, Action<object>>();
     public void ReceiveSignal(object actionType, Action<object> callBack)
     {
         signalCentral.TryAdd(actionType, null);
         signalCentral[actionType] += callBack;
+    } 
+    public void ReceiveSignal(object actionType, Action action)
+    {
+        Action<object> wrappedAction = (obj) => action();
+        ReceiveSignal(actionType, wrappedAction);
     }
 
     public void SendSignal(object actionType, object param = null)
