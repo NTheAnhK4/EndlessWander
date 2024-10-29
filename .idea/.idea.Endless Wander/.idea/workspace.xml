@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9afd55c5-ede6-4373-b550-452bacd10748" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess/DataProcess.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataProcess/DataProcess.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/MoveCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +18,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Node.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Selector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/BehaviorTree/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataDecider/DataDecider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/DataProcessID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/MoveID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/SensorID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/CurvedMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IAutoMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Movement/IRetreatMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +51,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__dataProcess&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__sensor&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,7 +117,8 @@
       <workItem from="1729952446176" duration="1301000" />
       <workItem from="1729956984269" duration="1591000" />
       <workItem from="1730122411187" duration="8797000" />
-      <workItem from="1730160321226" duration="4581000" />
+      <workItem from="1730160321226" duration="6294000" />
+      <workItem from="1730194710354" duration="1670000" />
     </task>
     <servers />
   </component>

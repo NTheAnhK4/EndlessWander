@@ -77,7 +77,6 @@ public class MoveCtrl : ChildBehavior
     {
         dataRelay.ReceiveSignal(MoveActionID.Auto, () =>
         {
-            Debug.Log("Moving");
             ChangeAction(MoveType.AutomatedMove);
         });
         dataRelay.ReceiveSignal(MoveActionID.MoveTo, (object param) =>
