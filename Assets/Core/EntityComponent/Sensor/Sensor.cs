@@ -6,13 +6,15 @@ public class Sensor : ChildBehavior
 {
     [SerializeField] protected DataRelay dataRelay;
     [SerializeField] protected Transform player;
-    [SerializeField] protected List<Transform> herbivores;
-    [SerializeField] protected List<Transform> carnivores;
-    [SerializeField] protected List<Transform> toxicPlants;
-    [SerializeField] protected List<Transform> medicinalPlants;
-    [SerializeField] protected List<Transform> neutralPlants;
-    [SerializeField] protected float radius = 5f;
+    [SerializeField] protected int herbivoreCount;
+    [SerializeField] protected int carnivoreCount;
+    [SerializeField] protected int toxicPlantCount;
+    [SerializeField] protected int medicinalPlantCount;
+    [SerializeField] protected int neutralPlantCount;
     
+    [SerializeField] protected float radius = 5f;
+
+    [SerializeField] protected Collider2D[] entityColliders;
     protected override void LoadComponentInParent()
     {
         base.LoadComponentInParent();
@@ -27,39 +29,48 @@ public class Sensor : ChildBehavior
 
     protected void Detection()
     {
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(dataRelay.transform.position, radius);
-        if (hitColliders.Length == 0) return;
-        Classification(hitColliders);
+        entityColliders = Physics2D.OverlapCircleAll(dataRelay.transform.position, radius);
+        if (entityColliders.Length == 0) return;
+        Classification();
     }
 
-    protected void Classification(Collider2D[] hitColliders)
+    protected void ResetEntityCount()
     {
-        foreach (Collider2D collider2D in hitColliders)
-        {
-            var entityTag = collider2D.tag;
-            switch (entityTag)
-            {
-                case "Herbivore":
-                    herbivores.Add(collider2D.transform.parent);
-                    break;
-                case "Carnivore":
-                    carnivores.Add(collider2D.transform.parent);
-                    break;
-                case "ToxicPlant":
-                    toxicPlants.Add(collider2D.transform.parent);
-                    break;
-                case "MedicinalPlant":
-                    medicinalPlants.Add(collider2D.transform.parent);
-                    break;
-                case "NeutralPlant" :
-                    neutralPlants.Add(collider2D.transform.parent);
-                    break;
-                case "Player":
-                    player = collider2D.transform.parent;
-                    break;
-            }
-            
-        }
+        herbivoreCount = 0;
+        carnivoreCount = 0;
+        toxicPlantCount = 0;
+        medicinalPlantCount = 0;
+        neutralPlantCount = 0;
+        player = null;
+    }
+    protected void Classification()
+    {
+       ResetEntityCount();
+       foreach (Collider2D collider2D in entityColliders)
+       {
+           var entityTag = collider2D.tag;
+           switch (entityTag)
+           {
+               case "Herbivore":
+                   herbivoreCount++;
+                   break;
+               case "Carnivore":
+                   carnivoreCount++;
+                   break;
+               case "ToxicPlant":
+                   toxicPlantCount++;
+                   break;
+               case "MedicinalPlant":
+                   medicinalPlantCount++;
+                   break;
+               case "NeutralPlant":
+                   neutralPlantCount++;
+                   break;
+               case "Player":
+                   player = collider2D.transform.parent;
+                   break;
+           }
+       }
     }
 
     protected void Update()
