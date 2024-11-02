@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9afd55c5-ede6-4373-b550-452bacd10748" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/EntityHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/PartHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/PartHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityReceiver/EntityReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityReceiver/EntityReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/EntityMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/EntityMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntitySensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntitySensor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/IMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/IMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/ControlMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/ControlMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/PlayerHealth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/PlayerHealth.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +36,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Move/IMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Move/RetreatedMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Move/TargetedMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntityClassifier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntityDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntitySensor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Bullet/BulletHit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Bullet/LinearMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Weapon/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/MonoBehaviourTree/Source/Runtime/Nodes/Log.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Task/code/C_sharp/game/Tower Defense 2D/Assets/_Core_2D_Tower_Defense/_Scripts/Tools/Observer/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,27 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__continueDevelopEnemey&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feature__bullet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
@@ -151,7 +151,7 @@
       <workItem from="1730457501876" duration="4032000" />
       <workItem from="1730465779730" duration="10602000" />
       <workItem from="1730512728806" duration="4819000" />
-      <workItem from="1730529650132" duration="6730000" />
+      <workItem from="1730529650132" duration="8347000" />
     </task>
     <servers />
   </component>
