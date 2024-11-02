@@ -9,7 +9,7 @@ public class ParentBehavior : MonoBehaviour
         LoadComponentInChild();
         LoadComponentInIt();
     }
-
+    
     protected virtual void LoadExternalComponent()
     {
         
@@ -40,5 +40,13 @@ public class ParentBehavior : MonoBehaviour
     {
         LoadComponent();
         ResetValue();
+    }
+    protected GameObject AddChildTransform(string transformName)
+    {
+        GameObject childObject = new GameObject(transformName);
+        childObject.transform.parent = this.transform;
+        childObject.transform.localPosition = Vector3.zero;
+        childObject.transform.localRotation = Quaternion.identity;
+        return childObject;
     }
 }
