@@ -869,6 +869,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataRelay: {fileID: 1768704412}
+  partHealths:
+  - name: Move Health
+    health: 10
+    damageRate: 0.2
+  - name: Interaction Health
+    health: 5
+    damageRate: 0.25
+  - name: Sensor Health
+    health: 10
+    damageRate: 0.55
+  - name: 
+    health: 0
+    damageRate: 0
 --- !u!1 &1100896010
 GameObject:
   m_ObjectHideFlags: 0

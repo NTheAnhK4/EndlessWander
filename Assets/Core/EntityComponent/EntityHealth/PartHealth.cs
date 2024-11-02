@@ -1,24 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
+[Serializable]
 public class PartHealth
 {
-    public string Name { get; }
-    public float Health { get; private set; }
-    public float DamageRate { get; }
+    
+    [SerializeField] private string name;
+    [SerializeField] private float maxHp;
+    [SerializeField] private float curHp;
+    [SerializeField] private float dropRate;
 
-    public PartHealth(string name, float health, float damageRate)
+    public float DropRate
     {
-        Name = name;
-        Health = health;
-        DamageRate = damageRate;
+        get => dropRate;
+        set => dropRate = value;
     }
 
+    public float MaxHp => maxHp;
+    public float CurHp
+    {
+        get => curHp;
+        set => curHp = value;
+    }
+    public PartHealth(string name, float minHealth, float maxHealth)
+    {
+        this.name = name;
+        this.maxHp = Random.Range(minHealth, maxHealth);
+        this.curHp = this.maxHp;
+        this.dropRate = 0; 
+    }
+
+    public PartHealth(string name, float health)
+    {
+        this.name = name;
+        this.maxHp = health;
+        this.curHp = maxHp;
+        this.dropRate = 0;
+    }
+    
     public void TakeDamage(float damage)
     {
-        Health = Mathf.Max(Health - damage, 0);
+        curHp = Mathf.Max(curHp - damage, 0);
     }
 
-    public bool IsFunctional => Health > 0;
+    public void Heal(float amount)
+    {
+        curHp = Mathf.Min(curHp + amount, maxHp);
+    }
+    public bool IsFunctional => curHp > 0;
 }

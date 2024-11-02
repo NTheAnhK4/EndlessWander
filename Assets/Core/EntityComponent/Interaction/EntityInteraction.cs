@@ -47,6 +47,9 @@ public class EntityInteraction : EntityComponent
 
     public void UseItem(object param = null)
     {
+        var entityEnergy = dataRelay.GetEntityComponent<EntityEnergy>(eCompID.Energy);
+        if(!entityEnergy.CanUseEnergy(2f)) return;
+        entityEnergy.UseEnergy(Time.deltaTime * 2f);
         currentItem.Execute(param);
     }
     
