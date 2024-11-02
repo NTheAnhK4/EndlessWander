@@ -6,23 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9afd55c5-ede6-4373-b550-452bacd10748" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Endless Wander/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Behavior/ChildBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Behavior/ParentBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Behavior/ParentBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/DecisionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/DecisionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/DecisionNodeStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/DecisionNodeStatus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/Selector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/Selector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/Sequence.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/BehaviorTree/Sequence.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Iteams/Iteam.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Iteams/Iteam.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Iteams/Weapon/MeleeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Iteams/Weapon/MeleeWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Iteams/Weapon/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Iteams/Weapon/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/EntityHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/EntityHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/PartHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/PartHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityReceiver/EntityReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/EntityReceiver/EntityReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Interaction/EntityInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/EntityMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Move/EntityMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntitySensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/EntityComponent/Sensor/EntitySensor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EndlessWander/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +28,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Common/EntityComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataRelay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/DataRelay/DataStore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/EntityEnergy/EntityEnergy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/EntityHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/IHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/EntityHealth/PartHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/EntityReceiver/EntityReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/EntityComponent/Enums/eCompID.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Iteams/Weapon/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/MonoBehaviourTree/Source/Runtime/Nodes/Log.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EndlessWander/Scripts/Manager/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EndlessWander/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Task/code/C_sharp/game/Tower Defense 2D/Assets/_Core_2D_Tower_Defense/_Scripts/Tools/Observer/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,7 +70,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__entityComponent&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__continueDevelopEnemey&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -157,6 +151,7 @@
       <workItem from="1730457501876" duration="4032000" />
       <workItem from="1730465779730" duration="10602000" />
       <workItem from="1730512728806" duration="4819000" />
+      <workItem from="1730529650132" duration="6730000" />
     </task>
     <servers />
   </component>

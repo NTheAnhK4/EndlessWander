@@ -52,9 +52,13 @@ public class EntitySensor : EntityComponent
     }
     protected void DetectObjects()
     {
+        var energyComponent = dataRelay.GetEntityComponent<EntityEnergy>(eCompID.Energy);
+        if (!energyComponent.CanUseEnergy(0.1f)) return;
+        energyComponent.UseEnergy(Time.deltaTime * 0.1f);
         entityClassifier.ResetCount();
         sensedObjects = entityDetection.DetectObjects();
         entityClassifier.ClassifyDetectedObjects(sensedObjects);
+
         
     }
     

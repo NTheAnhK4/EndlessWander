@@ -1,6 +1,7 @@
 
 using MBT;
 using UnityEngine;
+using System;
 
 public class EntityMove : EntityComponent
 {
@@ -12,6 +13,7 @@ public class EntityMove : EntityComponent
         Stop
     }
 
+    [SerializeField] protected EntityEnergy energy;
     [SerializeField] protected Transform entity;
     [SerializeField] protected Transform target;
     [SerializeField] protected TargetedMove targetedMove;
@@ -35,13 +37,8 @@ public class EntityMove : EntityComponent
     protected override void LoadComponentInParent()
     {
         base.LoadComponentInParent();
-        this.LoadEntity();
-    }
-
-    protected virtual void LoadEntity()
-    {
-        if(entity != null) return;
-        entity = dataRelay.transform;
+        entity ??= dataRelay.transform;
+        energy = dataRelay.GetEntityComponent<EntityEnergy>(eCompID.Energy);
     }
     protected override void ResetValue()
     {
@@ -55,26 +52,36 @@ public class EntityMove : EntityComponent
         dataRelay.RegisterSignal(eCompID.Move,this);
     }
 
+    protected void Move(Action moveAction)
+    {
+        if (!energy.CanUseEnergy(1f)) return;
+        energy.UseEnergy(Time.deltaTime);
+        moveAction.Invoke();
+    }
+
     protected void TargetedMove()
     {
-        targetedMove.Moving(entity,target, speed);
+        Move(() => targetedMove.Moving(entity, target, speed));
     }
 
     protected void RetreatedMove()
     {
-        retreatedMove.Moving(entity, target, speed);
+        Move(() => retreatedMove.Moving(entity, target, speed));
     }
 
     protected void AutomatedMove()
     {
-        if (entity.position.x > 20) direction = Vector3.left;
-        if (entity.position.x < -20) direction = Vector3.right;
-        entity.transform.Translate(direction * speed * Time.deltaTime);
-    }
+        Move(() => 
+        {
+            if (entity.position.x > 20) direction = Vector3.left;
+            else if (entity.position.x < -20) direction = Vector3.right;
 
+            entity.transform.Translate(direction * speed * Time.deltaTime);
+        });
+    }
     protected void Stop()
     {
-        
+        energy.RecoverEnergy(Time.deltaTime);
     }
     public void ChangeMoveStatus(MoveStatus newMoveStatus)
     {
