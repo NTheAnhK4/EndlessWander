@@ -135,7 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0efdbd066884db49a515bf71fb29229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0
+  user: {fileID: 5974211798735699436}
+  attackRange: 2
   attackSpeed: 3
   coolDown: 0
   damage: 1
@@ -451,15 +452,13 @@ GameObject:
   - component: {fileID: 7665438240697955922}
   - component: {fileID: 2431159527762269122}
   - component: {fileID: 5641778348822097337}
-  - component: {fileID: 524513716494597339}
-  - component: {fileID: 2693137252007389496}
-  - component: {fileID: 7614888780164571338}
-  - component: {fileID: 6000031060118735692}
-  - component: {fileID: 3364222730267770067}
-  - component: {fileID: 6840970818796755023}
-  - component: {fileID: 6618644043579001660}
   - component: {fileID: 1653741568948520000}
   - component: {fileID: 7278955795215941069}
+  - component: {fileID: 5360618614201255799}
+  - component: {fileID: 8695490441566961306}
+  - component: {fileID: 728960138943499497}
+  - component: {fileID: 5018961375790729991}
+  - component: {fileID: 9032839391448174103}
   m_Layer: 0
   m_Name: DataDecider
   m_TagString: Untagged
@@ -511,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25af8627659c6949b60949c3aa8d91d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedEditorNode: {fileID: 6618644043579001660}
+  selectedEditorNode: {fileID: 0}
   repeatOnFinish: 0
   maxExecutionsPerTick: 1000
   parent: {fileID: 0}
@@ -649,8 +648,8 @@ MonoBehaviour:
   title: Is Player Visible
   rect:
     serializedVersion: 2
-    x: 58.40001
-    y: 262.39993
+    x: 27.199997
+    y: 215.99992
     width: 160
     height: 44
   parent: {fileID: 3922422611781223493}
@@ -716,329 +715,13 @@ MonoBehaviour:
   title: Selector
   rect:
     serializedVersion: 2
-    x: 275.20004
-    y: 260.8003
+    x: 336.80002
+    y: 235.20029
     width: 160
     height: 44
   parent: {fileID: 3922422611781223493}
   children:
-  - {fileID: 524513716494597339}
-  - {fileID: 6618644043579001660}
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  random: 0
---- !u!114 &524513716494597339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78c7da6b00e1b46bad07949050f82f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Sequence
-  rect:
-    serializedVersion: 2
-    x: 119.19998
-    y: 315.20013
-    width: 160
-    height: 44
-  parent: {fileID: 5641778348822097337}
-  children:
-  - {fileID: 2693137252007389496}
-  - {fileID: 7614888780164571338}
-  - {fileID: 6840970818796755023}
-  - {fileID: 3364222730267770067}
-  - {fileID: 6000031060118735692}
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  random: 0
---- !u!114 &2693137252007389496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffadaaf47d86f04c94de1f467efb194, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Has Melee Weapon
-  rect:
-    serializedVersion: 2
-    x: 111.20001
-    y: 320.8001
-    width: 160
-    height: 44
-  parent: {fileID: 524513716494597339}
-  children: []
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  onCallFunction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8672070348233186861}
-        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
-        m_MethodName: HasMeleeWeapon
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7614888780164571338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffadaaf47d86f04c94de1f467efb194, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Can Use Melee Weapon
-  rect:
-    serializedVersion: 2
-    x: 113.600006
-    y: 319.1999
-    width: 160
-    height: 44
-  parent: {fileID: 524513716494597339}
-  children: []
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  onCallFunction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8672070348233186861}
-        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
-        m_MethodName: CanUseWeapon
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6000031060118735692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58fe7bc6a9b18e148b82820c7c1c0a90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Wait
-  rect:
-    serializedVersion: 2
-    x: 133.59998
-    y: 323.2002
-    width: 160
-    height: 44
-  parent: {fileID: 524513716494597339}
-  children: []
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  time:
-    useConstant: 1
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: 0.002
-  randomDeviation: 0
-  continueOnRestart: 0
---- !u!114 &3364222730267770067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d47807df5b5587e44bfd9aface30c12f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Use Melee Weapon
-  rect:
-    serializedVersion: 2
-    x: 127.19998
-    y: 320.00024
-    width: 160
-    height: 44
-  parent: {fileID: 524513716494597339}
-  children: []
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  type: 0
-  transformReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 7688051709380608824}
-    key: Player
-    constantValue: {fileID: 0}
-  gameObjectReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: {fileID: 0}
-  floatReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: 0
-  intReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: 0
-  boolReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: 0
-  stringReference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: 
-  vector3Reference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: {x: 0, y: 0, z: 0}
-  vector2Reference:
-    useConstant: 0
-    mode: 0
-    blackboard: {fileID: 0}
-    key: 
-    constantValue: {x: 0, y: 0}
-  transformEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8672070348233186861}
-        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
-        m_MethodName: UseItem
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  gameObjectEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  floatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  intEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  boolEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stringEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  vector3Event:
-    m_PersistentCalls:
-      m_Calls: []
-  vector2Event:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &6840970818796755023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ffadaaf47d86f04c94de1f467efb194, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Stop To Attack
-  rect:
-    serializedVersion: 2
-    x: 126.399994
-    y: 324.8
-    width: 160
-    height: 44
-  parent: {fileID: 524513716494597339}
-  children: []
-  behaviourTree: {fileID: 0}
-  runtimePriority: 0
-  breakpoint: 0
-  onCallFunction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6485826283541047924}
-        m_TargetAssemblyTypeName: EntityMove, Assembly-CSharp
-        m_MethodName: SetStopMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6618644043579001660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4242288566083668037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c78c7da6b00e1b46bad07949050f82f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Sequence
-  rect:
-    serializedVersion: 2
-    x: 400.80002
-    y: 318.4002
-    width: 160
-    height: 44
-  parent: {fileID: 5641778348822097337}
-  children:
-  - {fileID: 1653741568948520000}
-  - {fileID: 7278955795215941069}
+  - {fileID: 5360618614201255799}
   behaviourTree: {fileID: 0}
   runtimePriority: 0
   breakpoint: 0
@@ -1058,11 +741,11 @@ MonoBehaviour:
   title: Log
   rect:
     serializedVersion: 2
-    x: 255.20001
-    y: 393.6
+    x: 590.39996
+    y: 468.00003
     width: 160
     height: 44
-  parent: {fileID: 6618644043579001660}
+  parent: {fileID: 0}
   children: []
   behaviourTree: {fileID: 0}
   runtimePriority: 0
@@ -1085,11 +768,11 @@ MonoBehaviour:
   title: Move To Player
   rect:
     serializedVersion: 2
-    x: 443.20007
-    y: 380.00003
+    x: 680.8
+    y: 412
     width: 160
     height: 44
-  parent: {fileID: 6618644043579001660}
+  parent: {fileID: 0}
   children: []
   behaviourTree: {fileID: 0}
   runtimePriority: 0
@@ -1149,6 +832,266 @@ MonoBehaviour:
       - m_Target: {fileID: 6485826283541047924}
         m_TargetAssemblyTypeName: EntityMove, Assembly-CSharp
         m_MethodName: SetTargetedMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameObjectEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  intEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  boolEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  vector3Event:
+    m_PersistentCalls:
+      m_Calls: []
+  vector2Event:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5360618614201255799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242288566083668037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78c7da6b00e1b46bad07949050f82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Sequence
+  rect:
+    serializedVersion: 2
+    x: 375.19995
+    y: 330.40002
+    width: 160
+    height: 44
+  parent: {fileID: 5641778348822097337}
+  children:
+  - {fileID: 8695490441566961306}
+  - {fileID: 728960138943499497}
+  - {fileID: 5018961375790729991}
+  - {fileID: 9032839391448174103}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  random: 0
+--- !u!114 &8695490441566961306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242288566083668037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffadaaf47d86f04c94de1f467efb194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Has Ranged Weapon
+  rect:
+    serializedVersion: 2
+    x: 79.99988
+    y: 396.80005
+    width: 160
+    height: 44
+  parent: {fileID: 5360618614201255799}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  onCallFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8672070348233186861}
+        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
+        m_MethodName: HasRangedWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8672070348233186861}
+        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
+        m_MethodName: CanUseWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &728960138943499497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242288566083668037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffadaaf47d86f04c94de1f467efb194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Stop To Attack
+  rect:
+    serializedVersion: 2
+    x: 192.79984
+    y: 428.8
+    width: 160
+    height: 44
+  parent: {fileID: 5360618614201255799}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  onCallFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6485826283541047924}
+        m_TargetAssemblyTypeName: EntityMove, Assembly-CSharp
+        m_MethodName: SetStopMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5018961375790729991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242288566083668037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58fe7bc6a9b18e148b82820c7c1c0a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Wait
+  rect:
+    serializedVersion: 2
+    x: 251.99985
+    y: 431.2
+    width: 160
+    height: 44
+  parent: {fileID: 5360618614201255799}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  time:
+    useConstant: 1
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0.002
+  randomDeviation: 0
+  continueOnRestart: 0
+--- !u!114 &9032839391448174103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4242288566083668037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47807df5b5587e44bfd9aface30c12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Use Ranged Weapon
+  rect:
+    serializedVersion: 2
+    x: 399.99982
+    y: 449.59998
+    width: 160
+    height: 44
+  parent: {fileID: 5360618614201255799}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  type: 0
+  transformReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 7688051709380608824}
+    key: Player
+    constantValue: {fileID: 0}
+  gameObjectReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: {fileID: 0}
+  floatReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0
+  intReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0
+  boolReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0
+  stringReference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 
+  vector3Reference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: {x: 0, y: 0, z: 0}
+  vector2Reference:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: {x: 0, y: 0}
+  transformEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8672070348233186861}
+        m_TargetAssemblyTypeName: EntityInteraction, Assembly-CSharp
+        m_MethodName: UseItem
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1469,6 +1412,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d1577ff622a094899cb237958158ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8813149796281488630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749982436419977825}
+  - component: {fileID: 7498503793120816424}
+  m_Layer: 0
+  m_Name: RangedWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749982436419977825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813149796281488630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2950155628238483372}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7498503793120816424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8813149796281488630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f43211c9f6d234a90658114e5916cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  user: {fileID: 5974211798735699436}
+  attackRange: 15
+  attackSpeed: 1
+  coolDown: 0
+  bullet: {fileID: 3217675614665036416, guid: 76d4ef1e50263fb4a827ec283291719f, type: 3}
+  entityCollider: {fileID: 538188988491843156}
 --- !u!1 &8960768028057499298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1679799338808232903}
+  - {fileID: 749982436419977825}
   m_Father: {fileID: 1595113614226550135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7593462992736330676
@@ -1517,3 +1511,4 @@ MonoBehaviour:
   maxItem: 5
   heldItem:
   - {fileID: 131568843506544399}
+  - {fileID: 7498503793120816424}

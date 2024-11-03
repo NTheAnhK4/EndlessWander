@@ -1,14 +1,10 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 public class Test : MonoBehaviour
 {
-    [SerializeField] private AssetLabelReference obj;
-
-    protected void Reset()
-    {
-        obj = new AssetLabelReference();
-    }
+    public string linkPath;
 
     // Update is called once per frame
     void Update()
@@ -21,10 +17,10 @@ public class Test : MonoBehaviour
 
     public void SpawnObject()
     {
-        var handle = Addressables.LoadAssetAsync<GameObject>(obj);
+        var handle = Addressables.LoadAssetAsync<GameObject>(linkPath);
         handle.Completed += (task =>
         {
-            PoolingManager.Spawn(task.Result,this.transform);
+            Instantiate(task.Result);
         });
     }
 }

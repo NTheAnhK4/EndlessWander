@@ -17,5 +17,7 @@ public class BulletHit : ChildBehavior
     private void OnTriggerEnter2D(Collider2D other)
     {
         other.transform.GetComponent<EntityReceiver>()?.TakeDamage(damage);
+        Debug.Log(other.transform.parent.name);
+        PoolingManager.Despawn(transform.parent.gameObject);
     }
 }

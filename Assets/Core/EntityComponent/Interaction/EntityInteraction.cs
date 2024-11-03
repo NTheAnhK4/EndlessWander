@@ -19,9 +19,10 @@ public class EntityInteraction : EntityComponent
         dataRelay.RegisterSignal(eCompID.Interaction,this);
     }
 
-    public void HasMeleeWeapon(FunctionCallerNode functionCallerNode)
+    
+    public void HasItem<T>(FunctionCallerNode functionCallerNode) where T : Item
     {
-        Item item = inventory.CheckForItem<MeleeWeapon>();
+        Item item = inventory.CheckForItem<T>();
         if (item == null)
         {
             functionCallerNode.Result = NodeResult.failure;
@@ -31,6 +32,16 @@ public class EntityInteraction : EntityComponent
         currentItem = item;
         functionCallerNode.Result = NodeResult.success;
     }
+    public void HasRangedWeapon(FunctionCallerNode functionCallerNode)
+    {
+        HasItem<RangedWeapon>(functionCallerNode);
+    }
+    public void HasMeleeWeapon(FunctionCallerNode functionCallerNode)
+    {
+        HasItem<MeleeWeapon>(functionCallerNode);
+    }
+
+
 
     public void CanUseWeapon(FunctionCallerNode functionCallerNode)
     {
@@ -39,7 +50,6 @@ public class EntityInteraction : EntityComponent
             functionCallerNode.Result = NodeResult.failure;
             return;
         }
-
         var dataStore = dataRelay.GetEntityComponent<DataStore>(eCompID.DataStore);
         float distance = Vector2.Distance(dataStore.player.Value.transform.parent.position, dataStore.entity.Value.position);
         functionCallerNode.Result = currentItem.CanUse(distance) ? NodeResult.success : NodeResult.failure;

@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: ItemPrefab
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets
+  m_GroupName: ItemPrefab
   m_Data:
     m_SerializedData: []
   m_GUID: f9fbaa76ac6efa947b7106d2b9700408
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 76d4ef1e50263fb4a827ec283291719f
+    m_Address: Assets/EndlessWander/Prefabs/Bullet/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Bullet
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a26be1f3e163cd845b8e1f685b787b78, type: 2}
   m_SchemaSet:

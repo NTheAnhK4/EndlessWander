@@ -4,6 +4,7 @@ using UnityEngine;
 public abstract class Weapon : Item
 {
     //only use as a weapon not charactor 
+   
     [SerializeField] protected float attackRange;
     [SerializeField] protected float attackSpeed;
     [SerializeField] protected float coolDown;
