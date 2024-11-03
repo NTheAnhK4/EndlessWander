@@ -37,9 +37,10 @@ public class EntityMove : EntityComponent
     protected override void LoadComponentInParent()
     {
         base.LoadComponentInParent();
-        entity ??= dataRelay.transform;
-        energy = dataRelay.GetEntityComponent<EntityEnergy>(eCompID.Energy);
+        entity = dataRelay.transform;
+        energy ??= transform.parent.GetComponentInChildren<EntityEnergy>();
     }
+    
     protected override void ResetValue()
     {
         base.ResetValue();
@@ -54,6 +55,7 @@ public class EntityMove : EntityComponent
 
     protected void Move(Action moveAction)
     {
+       
         if (!energy.CanUseEnergy(1f)) return;
         energy.UseEnergy(Time.deltaTime);
         moveAction.Invoke();

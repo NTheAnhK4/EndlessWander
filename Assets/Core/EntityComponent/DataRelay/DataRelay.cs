@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using UnityEngine;
 
 
 public class DataRelay : ParentBehavior
@@ -8,6 +9,7 @@ public class DataRelay : ParentBehavior
 
     public void RegisterSignal(eCompID eID, EntityComponent eComponent)
     {
+        signalCentral.TryAdd(eID, null);
         signalCentral[eID] = eComponent;
     }
 
